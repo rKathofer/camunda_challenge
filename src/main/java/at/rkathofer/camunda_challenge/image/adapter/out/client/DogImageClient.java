@@ -8,7 +8,7 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestClient;
 
-@Service
+@Service( "dogImageClient")
 @RequiredArgsConstructor
 public class DogImageClient implements ImageClient {
     private static final String DOG_API_URL = "https://place.dog/500/500";

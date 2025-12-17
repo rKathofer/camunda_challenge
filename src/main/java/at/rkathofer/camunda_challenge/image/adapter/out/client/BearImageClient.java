@@ -8,7 +8,7 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestClient;
 
-@Service
+@Service( "bearImageClient")
 @RequiredArgsConstructor
 public class BearImageClient implements ImageClient {
     private static final String BEAR_API_URL = "https://placebear.com/500/500";

@@ -8,7 +8,7 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestClient;
 
-@Service
+@Service( "catImageClient")
 @RequiredArgsConstructor
 public class CatImageClient implements ImageClient {
     private static final String CAT_API_URL = "https://cataas.com/cat";
