@@ -2,6 +2,11 @@
 
 A Spring Boot application that fetches and stores random animal images (cats, dogs, bears) from external APIs.
 
+## Requirements
+
+- Java 25
+- Docker & Docker Compose (for PostgreSQL)
+
 ## Running with Gradle
 
 ```bash
