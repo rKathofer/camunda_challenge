@@ -11,5 +11,17 @@ services:
     volumes:
       - postgres_data:/var/lib/postgresql
 
+  app:
+    image: camunda-challenge:0.0.1-SNAPSHOT
+    container_name: camunda_challenge_app
+    ports:
+      - "8080:8080"
+    depends_on:
+      - postgres
+    environment:
+      SPRING_DATASOURCE_URL: jdbc:postgresql://postgres:5432/camunda_challenge
+      SPRING_DATASOURCE_USERNAME: postgres
+      SPRING_DATASOURCE_PASSWORD: postgres
+
 volumes:
   postgres_data:

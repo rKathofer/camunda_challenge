@@ -44,3 +44,11 @@ dependencies {
 tasks.named('test') {
     useJUnitPlatform()
 }
+
+bootBuildImage {
+    imageName = "camunda-challenge:${version}"
+}
+
+bootRun {
+    systemProperty 'spring.profiles.active', 'local'
+}
