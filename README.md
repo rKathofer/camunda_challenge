@@ -43,10 +43,13 @@ http://localhost:8080/swagger-ui/index.html
 
 ## Potential Improvements
 
-- **Build Pipeline** - CI/CD setup for automated builds and deployments
-- **Package Structure** - e.g. split DTOs from the Controllers
-- **Test Coverage** - Add more unit and integration tests
-- **Mapping Layer** - Introduce MapStruct or similar for entity/model mapping
+- CI/CD setup for automated builds and deployments
+- Better package layout; e.g. split DTOs from the Controllers
+- Add more unit and integration tests
+- Introduce MapStruct or similar for entity/model mapping
+- Improve injection of ImageClients
+- Move context (api) into properties
+- Maybe move client urls into properties
 
 ## Optional Tasks
 
